@@ -63,6 +63,12 @@
     document.querySelectorAll("[data-whatsapp-href]").forEach(function (el) {
       if (cfg.whatsappNumber) el.setAttribute("href", "https://wa.me/" + cfg.whatsappNumber);
     });
+    document.querySelectorAll("[data-email-display]").forEach(function (el) {
+      el.textContent = cfg.contactEmail || "";
+    });
+    document.querySelectorAll("[data-email-href]").forEach(function (el) {
+      if (cfg.contactEmail) el.setAttribute("href", "mailto:" + cfg.contactEmail);
+    });
     document.querySelectorAll("[data-group-name]").forEach(function (el) {
       el.textContent = cfg.groupName || "Zweli Group";
     });
@@ -168,10 +174,15 @@
     });
 
     var waLink = this.modal.querySelector("[data-whatsapp-send]");
+    var emailLink = this.modal.querySelector("[data-email-send]");
     var cfg = window.ZWELI_CONFIG || {};
     var message = this.opts.buildMessage(values);
     if (waLink && cfg.whatsappNumber) {
       waLink.href = "https://wa.me/" + cfg.whatsappNumber + "?text=" + encodeURIComponent(message);
+    }
+    if (emailLink && cfg.contactEmail) {
+      var subject = (message.split("\n")[0] || "Zweli Group enquiry").trim();
+      emailLink.href = "mailto:" + cfg.contactEmail + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(message);
     }
 
     this.modal.classList.add("is-open");
