@@ -420,3 +420,28 @@ body.home .split-media .img-panel{--ar:16/9}
 @media(prefers-reduced-motion:reduce){
   .path-card{transition:none}
 }
+
+
+/* ---------- Zweli Solar packages and photography ---------- */
+.solar-photo{display:block;width:100%;height:100%;object-fit:cover}
+.hero-figure .img-panel,.split-media .img-panel{overflow:hidden}
+.solar-visual-section{padding-top:34px}
+.solar-visuals{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.solar-visuals figure{margin:0}
+.solar-visuals .img-panel{--ar:4/3;overflow:hidden}
+.solar-visuals figcaption{padding-top:12px;font-size:.7rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-soft)}
+.solar-packages{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.solar-package{position:relative;padding:25px;background:var(--white);border:1px solid var(--line);border-radius:10px;box-shadow:0 8px 24px rgba(40,31,22,.055)}
+.solar-package-featured{border-color:var(--solar);box-shadow:0 12px 30px rgba(169,90,43,.13)}
+.solar-package-badge{position:absolute;top:14px;right:16px;margin:0;padding:4px 9px;border-radius:20px;background:var(--solar-dim);color:var(--solar-text);font-size:.65rem;font-weight:800;text-transform:uppercase;letter-spacing:.08em}
+.solar-package-top{display:flex;align-items:baseline;justify-content:space-between;gap:12px;border-bottom:1px solid var(--line);padding-bottom:13px}
+.solar-package h3{margin:0;font-size:1.45rem}
+.solar-package-price{margin:0;color:var(--solar-text);font-size:1.4rem;font-weight:800;white-space:nowrap}
+.solar-package ul{min-height:116px;padding-left:18px;margin:18px 0;color:var(--ink-soft);line-height:1.9}
+.solar-select-btn{width:100%;border:1px solid var(--ink);border-radius:4px;background:var(--ink);color:var(--white);padding:13px 16px;font:700 .69rem var(--font-body);text-transform:uppercase;letter-spacing:.1em;cursor:pointer}
+.solar-select-btn:hover,.solar-select-btn:focus-visible{background:var(--solar-text);border-color:var(--solar-text)}
+.solar-payment-note{display:flex;justify-content:space-between;gap:20px;align-items:center;margin-top:28px;padding:20px 24px;border:1px solid var(--line);border-radius:8px;background:var(--paper)}
+.solar-payment-note strong{color:var(--solar-text)}
+.solar-payment-note span{color:var(--ink-soft)}
+@media(max-width:900px){.solar-packages{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:620px){.solar-visuals{grid-template-columns:1fr}.solar-visuals .img-panel{--ar:16/10}.solar-packages{grid-template-columns:1fr}.solar-package ul{min-height:0}.solar-package-top{align-items:flex-start;flex-direction:column;gap:2px}.solar-payment-note{align-items:flex-start;flex-direction:column;gap:4px}}
