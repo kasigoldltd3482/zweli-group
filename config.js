@@ -9,6 +9,9 @@ window.ZWELI_CONFIG = {
   // owner confirms the final brand name.
   groupName: "Zweli Group",
 
+  // Default business email address for enquiries.
+  contactEmail: "zweligroup@gmail.com",
+
   // Business WhatsApp number, digits only, international format,
   // no "+", no spaces. Used to build every wa.me link on the site.
   whatsappNumber: "27614608400",
