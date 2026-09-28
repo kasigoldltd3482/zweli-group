@@ -1,0 +1,16 @@
+<svg viewBox="0 0 1200 900" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+  <rect width="1200" height="900" fill="#F3E7E4"/>
+  <g opacity="0.9"><circle cx="760" cy="300" r="60" fill="none" stroke="#6E2A34" stroke-width="2" opacity="0.5"/><circle cx="760" cy="300" r="94" fill="none" stroke="#6E2A34" stroke-width="2" opacity="0.38"/><circle cx="760" cy="300" r="128" fill="none" stroke="#6E2A34" stroke-width="2" opacity="0.26"/><circle cx="760" cy="300" r="162" fill="none" stroke="#6E2A34" stroke-width="2" opacity="0.14"/>
+    <circle cx="430" cy="560" r="90" fill="none" stroke="#6E2A34" stroke-width="4"/>
+    <circle cx="430" cy="560" r="54.0" fill="none" stroke="#6E2A34" stroke-width="2.5" opacity="0.7"/>
+    <line x1="286.0" y1="443.0" x2="286.0" y2="677.0" stroke="#6E2A34" stroke-width="4" stroke-linecap="round"/>
+    <line x1="263.5" y1="443.0" x2="263.5" y2="515.0" stroke="#6E2A34" stroke-width="4" stroke-linecap="round"/>
+    <line x1="308.5" y1="443.0" x2="308.5" y2="515.0" stroke="#6E2A34" stroke-width="4" stroke-linecap="round"/>
+    <path d="M 574.0 443.0 q -14 30 0 60 v 72.0" fill="none" stroke="#6E2A34" stroke-width="4" stroke-linecap="round"/>
+    
+    <rect x="770.0" y="575.0" width="220" height="90" rx="10" fill="none" stroke="#6E2A34" stroke-width="4"/>
+    <circle cx="825.0" cy="620" r="19.8" fill="none" stroke="#6E2A34" stroke-width="3"/>
+    <circle cx="935.0" cy="620" r="19.8" fill="none" stroke="#6E2A34" stroke-width="3"/>
+    </g>
+  <rect x="0" y="0" width="1200" height="900" fill="none" stroke="#6E2A34" stroke-opacity="0.18" stroke-width="6"/>
+</svg>

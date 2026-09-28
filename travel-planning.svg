@@ -1,0 +1,9 @@
+<svg viewBox="0 0 900 700" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+  <rect width="900" height="700" fill="#E6EEEC"/>
+  <g opacity="0.9">
+    <rect x="300.0" y="270.0" width="300" height="220" rx="8" fill="none" stroke="#1F4B4A" stroke-width="4"/>
+    <path d="M 396.0 270.0 v -18 a 10 10 0 0 1 10 -10 h 88.0 a 10 10 0 0 1 10 10 v 18" fill="none" stroke="#1F4B4A" stroke-width="4"/>
+    <line x1="300.0" y1="380" x2="600.0" y2="380" stroke="#1F4B4A" stroke-width="3" opacity="0.6"/>
+    </g>
+  <rect x="0" y="0" width="900" height="700" fill="none" stroke="#1F4B4A" stroke-opacity="0.18" stroke-width="6"/>
+</svg>

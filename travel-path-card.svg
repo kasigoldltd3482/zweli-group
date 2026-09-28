@@ -1,0 +1,9 @@
+<svg viewBox="0 0 900 700" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+  <rect width="900" height="700" fill="#E6EEEC"/>
+  <g opacity="0.9">
+    <path d="M 280 350 L 620 350 M 518.0 248.0 L 620 350 L 518.0 452.0
+             M 416.0 299.0 L 356.5 222.5 M 416.0 401.0 L 356.5 477.5"
+          fill="none" stroke="#1F4B4A" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  <rect x="0" y="0" width="900" height="700" fill="none" stroke="#1F4B4A" stroke-opacity="0.18" stroke-width="6"/>
+</svg>

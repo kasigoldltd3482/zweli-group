@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Zweli Solar Power | Zweli Group</title>
+<meta name="description" content="Zweli Solar Power for homes and businesses. Send your solar enquiry straight to WhatsApp.">
+<link rel="icon" href="brand-favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="solar">
+<a class="skip-link" href="#main">Skip to main content</a>
+<div class="draft-banner">Services, specifications and photos on this page are placeholders until the owner confirms them. See the <a href="README.md">README</a>.</div>
+
+<header class="site-header">
+  <nav class="nav" aria-label="Primary">
+    <a class="brand" href="index.html"><span data-group-name>Zweli Group</span></a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu"><span></span></button>
+    <ul class="nav-links" id="primary-nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="food.html">Zwilicious Food</a></li>
+      <li><a href="travel.html">Zweli Travel</a></li>
+      <li><a href="solar.html" aria-current="page">Zweli Solar</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a class="nav-cta" href="#enquiry">Make an enquiry</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-copy">
+        <p class="hero-eyebrow">Zweli Solar Power</p>
+        <h1>Solar power for your home or business, explained plainly.</h1>
+        <p class="lede">Tell us about your property and what you're hoping solar can do for you. Zweli Solar Power will follow up with real options, not guesswork.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#enquiry">Start a solar enquiry</a>
+          <a class="btn btn-secondary" href="#services">What we help with</a>
+        </div>
+      </div>
+      <figure class="hero-figure">
+        <div class="img-panel ar-wide">
+          <img src="solar-hero-solar.svg" alt="Placeholder image representing solar power for homes and businesses" loading="lazy">
+          <span class="placeholder-tag">Placeholder — replace with solar installation photo</span>
+        </div>
+        <figcaption>Real installation photography will replace this artwork once the owner supplies it.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="section-alt" id="services">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker">How we can help</p>
+        <h2>Areas Zweli Solar Power can assist with</h2>
+        <p>These are general categories only. Exact products, specifications, warranties and prices will be added once confirmed by the owner.</p>
+      </div>
+      <div class="service-list">
+        <div class="service-row">
+          <div><h4>Home solar systems</h4><p>Solar power for houses and residential properties.</p></div>
+          <span class="status-pill pending">Pending confirmation</span>
+        </div>
+        <div class="service-row">
+          <div><h4>Business solar systems</h4><p>Solar power for shops, offices and other businesses.</p></div>
+          <span class="status-pill pending">Pending confirmation</span>
+        </div>
+        <div class="service-row">
+          <div><h4>Backup power &amp; load-shedding solutions</h4><p>Keeping essential appliances running during outages.</p></div>
+          <span class="status-pill pending">Pending confirmation</span>
+        </div>
+        <div class="service-row">
+          <div><h4>Site assessments</h4><p>A look at your property to advise on what's possible.</p></div>
+          <span class="status-pill pending">Pending confirmation</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="split">
+        <div>
+          <p class="kicker">How it works</p>
+          <h2>Tell us about your property, we'll take it from there</h2>
+          <p>Fill in the form below with what you know about your property and electricity use. Zweli Solar Power will follow up on WhatsApp with next steps — sending the form does not confirm an installation or a quotation.</p>
+        </div>
+        <div class="split-media">
+          <div class="img-panel ar-square">
+            <img src="solar-home-power.svg" alt="Placeholder image representing solar power for a home" loading="lazy">
+            <span class="placeholder-tag">Placeholder</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-alt" id="enquiry">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker">Solar enquiry</p>
+        <h2>Tell us about your property</h2>
+        <p>Fill in what you know — an installer can ask for more detail later if needed.</p>
+      </div>
+
+      <div class="form-card">
+        <p class="form-note">Sending this enquiry does not confirm an installation or a quotation. Zweli Solar Power will follow up with you on WhatsApp.</p>
+
+        <form id="solar-form" novalidate>
+          <div class="field-row">
+            <div class="field" data-field="name">
+              <label for="solar-name">Your name</label>
+              <input type="text" id="solar-name" name="name" autocomplete="name" required>
+              <p class="error-text">Please enter your name.</p>
+            </div>
+            <div class="field" data-field="phone">
+              <label for="solar-phone">Phone number</label>
+              <input type="tel" id="solar-phone" name="phone" autocomplete="tel" required>
+              <p class="error-text">Please enter a phone number.</p>
+            </div>
+          </div>
+
+          <div class="field" data-field="propertyType">
+            <label for="solar-property-type">Property type</label>
+            <select id="solar-property-type" name="propertyType" required>
+              <option value="">Choose an option</option>
+              <option value="Home">Home</option>
+              <option value="Business">Business</option>
+            </select>
+            <p class="error-text">Please choose a property type.</p>
+          </div>
+
+          <div class="field" data-field="location">
+            <label for="solar-location">Area or location</label>
+            <input type="text" id="solar-location" name="location" required placeholder="Suburb, town or address">
+            <p class="error-text">Please tell us the property's area or location.</p>
+          </div>
+
+          <div class="field" data-field="helpType">
+            <label for="solar-help-type">Type of help requested</label>
+            <select id="solar-help-type" name="helpType" required>
+              <option value="">Choose an option</option>
+              <option value="New solar installation">New solar installation</option>
+              <option value="Backup power / load-shedding solution">Backup power / load-shedding solution</option>
+              <option value="Upgrade an existing system">Upgrade an existing system</option>
+              <option value="Site assessment / advice">Site assessment / advice</option>
+              <option value="Other">Other</option>
+            </select>
+            <p class="error-text">Please choose the type of help you need.</p>
+          </div>
+
+          <div class="field" data-field="existingSystem">
+            <label for="solar-existing">Existing solar system or electricity use (if known)</label>
+            <textarea id="solar-existing" name="existingSystem" placeholder="e.g. current system details, average monthly electricity bill, main appliances to keep running"></textarea>
+          </div>
+
+          <div class="field" data-field="notes">
+            <label for="solar-notes">Extra notes</label>
+            <textarea id="solar-notes" name="notes" placeholder="Anything else we should know"></textarea>
+          </div>
+
+          <p class="form-status" role="status" aria-live="polite"></p>
+
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary btn-block">Review my enquiry</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<div class="modal-backdrop" id="solar-summary-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="solar-modal-title">
+  <div class="modal">
+    <button class="modal-close" aria-label="Close summary">&times;</button>
+    <h3 id="solar-modal-title">Review your solar enquiry</h3>
+    <p>Check the details below. Nothing is sent until you tap the WhatsApp button and then Send inside WhatsApp.</p>
+    <ul class="summary-list"></ul>
+    <p class="modal-disclaimer">This sends an enquiry only. It is not a confirmed installation, quotation or price — Zweli Solar Power will follow up with you on WhatsApp.</p>
+    <div class="modal-actions">
+      <button type="button" class="btn btn-secondary" data-modal-back>Go back &amp; edit</button>
+      <a class="btn btn-whatsapp" href="#" data-whatsapp-send target="_blank" rel="noopener">Continue to WhatsApp</a>
+    </div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <p class="footer-brand" data-group-name>Zweli Group</p>
+        <p>The shared home of Zwilicious Food, Zweli Travel Agency and Zweli Solar Power.</p>
+      </div>
+      <div>
+        <h5>Businesses</h5>
+        <ul>
+          <li><a href="food.html">Zwilicious Food</a></li>
+          <li><a href="travel.html">Zweli Travel Agency</a></li>
+          <li><a href="solar.html">Zweli Solar Power</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Site</h5>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Talk to us</h5>
+        <ul>
+          <li><a data-whatsapp-href href="https://wa.me/27614608400">WhatsApp: <span data-whatsapp-display>+27 61 460 8400</span></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span data-current-year>2026</span> <span data-group-name>Zweli Group</span>. Working draft site.</span>
+      <span>Enquiries are not confirmed bookings, orders or quotations.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="config.js"></script>
+<script src="main.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    new ZweliForm({
+      formId: "solar-form",
+      modalId: "solar-summary-modal",
+      fields: [
+        { name: "name", label: "Name", required: true },
+        { name: "phone", label: "Phone number", required: true },
+        { name: "propertyType", label: "Property type", required: true },
+        { name: "location", label: "Area / location", required: true },
+        { name: "helpType", label: "Type of help requested", required: true },
+        { name: "existingSystem", label: "Existing system / electricity use", required: false },
+        { name: "notes", label: "Extra notes", required: false }
+      ],
+      buildMessage: function (v) {
+        return [
+          "Solar enquiry — Zweli Solar Power",
+          "",
+          "Name: " + v.name,
+          "Phone: " + v.phone,
+          "Property type: " + v.propertyType,
+          "Area/location: " + v.location,
+          "Type of help requested: " + v.helpType,
+          "Existing system / electricity use: " + (v.existingSystem || "Not specified"),
+          "Extra notes: " + (v.notes || "None"),
+          "",
+          "(Sent from the Zweli Solar Power enquiry form. This is an enquiry only, not a confirmed installation or quotation.)"
+        ].join("\n");
+      }
+    });
+  });
+</script>
+</body>
+</html>
+

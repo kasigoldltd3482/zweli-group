@@ -1,0 +1,9 @@
+<svg viewBox="0 0 900 700" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+  <rect width="900" height="700" fill="#F3E7E4"/>
+  <g opacity="0.9">
+    <rect x="240.0" y="225.0" width="420" height="70" rx="10" fill="none" stroke="#6E2A34" stroke-width="4"/>
+    <circle cx="345.0" cy="260" r="15.4" fill="none" stroke="#6E2A34" stroke-width="3"/>
+    <circle cx="555.0" cy="260" r="15.4" fill="none" stroke="#6E2A34" stroke-width="3"/>
+    <circle cx="230" cy="480" r="22" fill="none" stroke="#6E2A34" stroke-width="2" opacity="0.5"/><circle cx="230" cy="480" r="38" fill="none" stroke="#6E2A34" stroke-width="2" opacity="0.38"/><circle cx="450" cy="500" r="22" fill="none" stroke="#6E2A34" stroke-width="2" opacity="0.5"/><circle cx="450" cy="500" r="38" fill="none" stroke="#6E2A34" stroke-width="2" opacity="0.38"/><circle cx="670" cy="480" r="22" fill="none" stroke="#6E2A34" stroke-width="2" opacity="0.5"/><circle cx="670" cy="480" r="38" fill="none" stroke="#6E2A34" stroke-width="2" opacity="0.38"/></g>
+  <rect x="0" y="0" width="900" height="700" fill="none" stroke="#6E2A34" stroke-opacity="0.18" stroke-width="6"/>
+</svg>

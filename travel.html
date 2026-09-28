@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Zweli Travel Agency | Zweli Group</title>
+<meta name="description" content="Zweli Travel Agency plans trips around you. Send your travel enquiry straight to WhatsApp.">
+<link rel="icon" href="brand-favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="travel">
+<a class="skip-link" href="#main">Skip to main content</a>
+<div class="draft-banner">Destinations and packages on this page are placeholders until the owner confirms them. See the <a href="README.md">README</a>.</div>
+
+<header class="site-header">
+  <nav class="nav" aria-label="Primary">
+    <a class="brand" href="index.html"><span data-group-name>Zweli Group</span></a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu"><span></span></button>
+    <ul class="nav-links" id="primary-nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="food.html">Zwilicious Food</a></li>
+      <li><a href="travel.html" aria-current="page">Zweli Travel</a></li>
+      <li><a href="solar.html">Zweli Solar</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a class="nav-cta" href="#enquiry">Make an enquiry</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-copy">
+        <p class="hero-eyebrow">Zweli Travel Agency</p>
+        <h1>Tell us where you'd like to go. We'll handle the details.</h1>
+        <p class="lede">Whether it's flights, accommodation or a full trip, Zweli Travel Agency puts the details together for you. Send an enquiry and a real person will follow up on WhatsApp.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#enquiry">Start a travel enquiry</a>
+          <a class="btn btn-secondary" href="#services">What we help with</a>
+        </div>
+      </div>
+      <figure class="hero-figure">
+        <div class="img-panel ar-wide">
+          <img src="travel-hero-travel.svg" alt="Placeholder image representing travel planning" loading="lazy">
+          <span class="placeholder-tag">Placeholder — replace with travel photo</span>
+        </div>
+        <figcaption>Real travel and destination photography will replace this artwork once the owner supplies it.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="section-alt" id="services">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker">How we can help</p>
+        <h2>Types of trips we take enquiries for</h2>
+        <p>These are general categories only — not confirmed destinations, packages or prices. Tell us what you need in the form below and we'll confirm what's possible.</p>
+      </div>
+      <div class="service-list">
+        <div class="service-row">
+          <div><h4>Flights</h4><p>Domestic and international flight bookings.</p></div>
+          <span class="status-pill pending">Pending confirmation</span>
+        </div>
+        <div class="service-row">
+          <div><h4>Accommodation</h4><p>Hotels, guesthouses and self-catering stays.</p></div>
+          <span class="status-pill pending">Pending confirmation</span>
+        </div>
+        <div class="service-row">
+          <div><h4>Full trip packages</h4><p>Flights, stay and transport planned together.</p></div>
+          <span class="status-pill pending">Pending confirmation</span>
+        </div>
+        <div class="service-row">
+          <div><h4>Group &amp; family travel</h4><p>Trips for families, church groups and teams.</p></div>
+          <span class="status-pill pending">Pending confirmation</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="split reverse">
+        <div>
+          <p class="kicker">How it works</p>
+          <h2>One form, one WhatsApp message</h2>
+          <p>Fill in your trip details below, check the summary, then send it straight to WhatsApp. Zweli Travel Agency will reply with real options and prices — nothing is booked automatically.</p>
+        </div>
+        <div class="split-media">
+          <div class="img-panel ar-square">
+            <img src="travel-planning.svg" alt="Placeholder image representing trip planning" loading="lazy">
+            <span class="placeholder-tag">Placeholder</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-alt" id="enquiry">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker">Travel enquiry</p>
+        <h2>Tell us about your trip</h2>
+        <p>Fill in what you know — we can work with rough dates and details.</p>
+      </div>
+
+      <div class="form-card">
+        <p class="form-note">Sending this enquiry does not confirm a booking. Zweli Travel Agency will follow up with availability and pricing on WhatsApp.</p>
+
+        <form id="travel-form" novalidate>
+          <div class="field-row">
+            <div class="field" data-field="name">
+              <label for="travel-name">Your name</label>
+              <input type="text" id="travel-name" name="name" autocomplete="name" required>
+              <p class="error-text">Please enter your name.</p>
+            </div>
+            <div class="field" data-field="phone">
+              <label for="travel-phone">Phone number</label>
+              <input type="tel" id="travel-phone" name="phone" autocomplete="tel" required>
+              <p class="error-text">Please enter a phone number.</p>
+            </div>
+          </div>
+
+          <div class="field-row">
+            <div class="field" data-field="destination">
+              <label for="travel-destination">Destination</label>
+              <input type="text" id="travel-destination" name="destination" required placeholder="Where would you like to go?">
+              <p class="error-text">Please tell us your destination.</p>
+            </div>
+            <div class="field" data-field="departure">
+              <label for="travel-departure">Departure location</label>
+              <input type="text" id="travel-departure" name="departure" required placeholder="Where are you travelling from?">
+              <p class="error-text">Please tell us your departure location.</p>
+            </div>
+          </div>
+
+          <div class="field-row">
+            <div class="field" data-field="dateFrom">
+              <label for="travel-date-from">Preferred travel date</label>
+              <input type="date" id="travel-date-from" name="dateFrom" required>
+              <p class="error-text">Please choose a date.</p>
+            </div>
+            <div class="field" data-field="dateTo">
+              <label for="travel-date-to">Return date</label>
+              <input type="date" id="travel-date-to" name="dateTo">
+              <p class="hint">Leave blank if one-way or not yet known.</p>
+            </div>
+          </div>
+
+          <div class="field-row">
+            <div class="field" data-field="adults">
+              <label for="travel-adults">Number of adults</label>
+              <input type="number" id="travel-adults" name="adults" min="1" required>
+              <p class="error-text">Please enter the number of adults.</p>
+            </div>
+            <div class="field" data-field="children">
+              <label for="travel-children">Number of children</label>
+              <input type="number" id="travel-children" name="children" min="0" value="0">
+            </div>
+          </div>
+
+          <div class="field" data-field="serviceType">
+            <label for="travel-service-type">Type of trip or service</label>
+            <select id="travel-service-type" name="serviceType" required>
+              <option value="">Choose an option</option>
+              <option value="Flights only">Flights only</option>
+              <option value="Accommodation only">Accommodation only</option>
+              <option value="Full trip package">Full trip package</option>
+              <option value="Group or family travel">Group or family travel</option>
+              <option value="Other">Other</option>
+            </select>
+            <p class="error-text">Please choose a trip type.</p>
+          </div>
+
+          <div class="field" data-field="preferences">
+            <label for="travel-preferences">Transport, accommodation &amp; other preferences</label>
+            <textarea id="travel-preferences" name="preferences" placeholder="e.g. hotel vs guesthouse, direct flights, budget range"></textarea>
+          </div>
+
+          <div class="field" data-field="notes">
+            <label for="travel-notes">Extra notes</label>
+            <textarea id="travel-notes" name="notes" placeholder="Anything else we should know"></textarea>
+          </div>
+
+          <p class="form-status" role="status" aria-live="polite"></p>
+
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary btn-block">Review my enquiry</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<div class="modal-backdrop" id="travel-summary-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="travel-modal-title">
+  <div class="modal">
+    <button class="modal-close" aria-label="Close summary">&times;</button>
+    <h3 id="travel-modal-title">Review your travel enquiry</h3>
+    <p>Check the details below. Nothing is sent until you tap the WhatsApp button and then Send inside WhatsApp.</p>
+    <ul class="summary-list"></ul>
+    <p class="modal-disclaimer">This sends an enquiry only. It is not a confirmed booking, ticket, price or itinerary — Zweli Travel Agency will follow up with you on WhatsApp.</p>
+    <div class="modal-actions">
+      <button type="button" class="btn btn-secondary" data-modal-back>Go back &amp; edit</button>
+      <a class="btn btn-whatsapp" href="#" data-whatsapp-send target="_blank" rel="noopener">Continue to WhatsApp</a>
+    </div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <p class="footer-brand" data-group-name>Zweli Group</p>
+        <p>The shared home of Zwilicious Food, Zweli Travel Agency and Zweli Solar Power.</p>
+      </div>
+      <div>
+        <h5>Businesses</h5>
+        <ul>
+          <li><a href="food.html">Zwilicious Food</a></li>
+          <li><a href="travel.html">Zweli Travel Agency</a></li>
+          <li><a href="solar.html">Zweli Solar Power</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Site</h5>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Talk to us</h5>
+        <ul>
+          <li><a data-whatsapp-href href="https://wa.me/27614608400">WhatsApp: <span data-whatsapp-display>+27 61 460 8400</span></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span data-current-year>2026</span> <span data-group-name>Zweli Group</span>. Working draft site.</span>
+      <span>Enquiries are not confirmed bookings, orders or quotations.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="config.js"></script>
+<script src="main.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    new ZweliForm({
+      formId: "travel-form",
+      modalId: "travel-summary-modal",
+      fields: [
+        { name: "name", label: "Name", required: true },
+        { name: "phone", label: "Phone number", required: true },
+        { name: "destination", label: "Destination", required: true },
+        { name: "departure", label: "Departure location", required: true },
+        { name: "dateFrom", label: "Preferred travel date", required: true },
+        { name: "dateTo", label: "Return date", required: false },
+        { name: "adults", label: "Adults", required: true },
+        { name: "children", label: "Children", required: false },
+        { name: "serviceType", label: "Type of trip / service", required: true },
+        { name: "preferences", label: "Preferences", required: false },
+        { name: "notes", label: "Extra notes", required: false }
+      ],
+      buildMessage: function (v) {
+        return [
+          "Travel enquiry — Zweli Travel Agency",
+          "",
+          "Name: " + v.name,
+          "Phone: " + v.phone,
+          "Destination: " + v.destination,
+          "Departing from: " + v.departure,
+          "Travel date: " + v.dateFrom + (v.dateTo ? " to " + v.dateTo : " (return date not specified)"),
+          "Adults: " + v.adults,
+          "Children: " + (v.children || "0"),
+          "Type of trip/service: " + v.serviceType,
+          "Preferences: " + (v.preferences || "None specified"),
+          "Extra notes: " + (v.notes || "None"),
+          "",
+          "(Sent from the Zweli Travel Agency enquiry form. This is an enquiry only, not a confirmed booking.)"
+        ].join("\n");
+      }
+    });
+  });
+</script>
+</body>
+</html>
+
