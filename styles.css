@@ -445,3 +445,100 @@ body.home .split-media .img-panel{--ar:16/9}
 .solar-payment-note span{color:var(--ink-soft)}
 @media(max-width:900px){.solar-packages{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:620px){.solar-visuals{grid-template-columns:1fr}.solar-visuals .img-panel{--ar:16/10}.solar-packages{grid-template-columns:1fr}.solar-package ul{min-height:0}.solar-package-top{align-items:flex-start;flex-direction:column;gap:2px}.solar-payment-note{align-items:flex-start;flex-direction:column;gap:4px}}
+
+/* ---------- Catering quotation tool ---------- */
+.quote-page{--quote-card:#fffdf9}
+.quote-intro{padding:68px 0 54px}
+.quote-intro-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:54px;align-items:center}
+.quote-intro h1{max-width:10ch}
+.quote-intro-image{box-shadow:0 18px 45px rgba(40,31,22,.12)}
+.quote-section{padding-top:52px}
+.quote-progress{display:grid;grid-template-columns:repeat(3,1fr);max-width:720px;margin:0 0 30px;position:relative}
+.quote-progress::before{content:"";position:absolute;left:10%;right:10%;top:19px;height:1px;background:var(--line)}
+.quote-progress-item{display:grid;justify-items:center;gap:7px;position:relative;color:var(--ink-soft);font-size:.72rem;letter-spacing:.08em;text-transform:uppercase}
+.quote-progress-item span{display:grid;place-items:center;width:38px;height:38px;border:1px solid var(--line);border-radius:50%;background:var(--paper-dim);font-weight:700;z-index:1}
+.quote-progress-item.is-active span,.quote-progress-item.is-complete span{background:var(--food);border-color:var(--food);color:#fff}
+.quote-progress-item.is-active{color:var(--food)}
+.quote-layout{display:grid;grid-template-columns:minmax(0,760px) minmax(250px,330px);gap:28px;align-items:start}
+.quote-form-card,.quote-live-card{background:var(--quote-card);border:1px solid var(--line);border-radius:12px;box-shadow:0 16px 42px rgba(40,31,22,.07)}
+.quote-form-card{padding:clamp(22px,4vw,42px)}
+.quote-live-card{position:sticky;top:96px;padding:27px}
+.quote-live-card h2{font-size:2rem}
+.quote-live-card dl{margin:18px 0}
+.quote-live-card dl div{display:flex;justify-content:space-between;gap:16px;padding:11px 0;border-bottom:1px solid var(--line)}
+.quote-live-card dt{color:var(--ink-soft)}
+.quote-live-card dd{margin:0;text-align:right;font-weight:700}
+.quote-live-card p{font-size:.82rem;color:var(--ink-soft)}
+.quote-live-card hr{border:0;border-top:1px solid var(--line);margin:22px 0}
+.quote-live-total{display:grid;gap:3px;padding:17px;background:var(--food-dim);border-radius:8px;margin-bottom:12px}
+.quote-live-total span{font-size:.72rem;text-transform:uppercase;letter-spacing:.09em;font-weight:700}
+.quote-live-total strong{font-family:var(--font-display);font-size:1.75rem;color:var(--food)}
+.quote-disclosure{background:var(--food-dim);border-left:4px solid var(--food);padding:14px 16px;margin-bottom:32px;font-size:.9rem}
+.quote-step{padding:0}
+.quote-step-head{margin-bottom:26px}
+.quote-step-head .kicker,.quote-review .kicker,.quote-live-card .kicker{color:var(--food);text-transform:uppercase;letter-spacing:.14em;font-size:.68rem;font-weight:700;margin-bottom:7px}
+.quote-step-head h2{font-size:clamp(2rem,4vw,3rem)}
+.quote-step-head p:not(.kicker){color:var(--ink-soft)}
+.quote-choice-group{border:0;padding:0;margin-bottom:26px}
+.quote-choice-group legend{font-size:.92rem;margin-bottom:9px;padding:0}
+.quote-choice-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.quote-choice{position:relative;display:flex;gap:12px;padding:16px;border:1px solid var(--line);border-radius:9px;background:var(--paper);cursor:pointer;margin:0;min-height:116px}
+.quote-choice:hover{border-color:var(--food)}
+.quote-choice:has(input:checked){border-color:var(--food);box-shadow:inset 0 0 0 1px var(--food);background:var(--food-dim)}
+.quote-choice input{width:18px;height:18px;margin-top:2px;accent-color:var(--food);flex:none}
+.quote-choice-copy{display:grid;align-content:start;gap:4px}
+.quote-choice-copy strong{font-size:.94rem}
+.quote-choice-copy small{color:var(--ink-soft);font-weight:400;line-height:1.5}
+.quote-choice-copy em{font-size:.72rem;color:var(--food);font-style:normal;font-weight:700;text-transform:uppercase;letter-spacing:.05em}
+.quote-choice.compact{min-height:0}
+.quote-choice-grid.has-error{border:1px solid #9a2a2a;border-radius:9px;padding:8px}
+.quote-choice-grid.has-error + .error-text{display:block}
+.optional{font-weight:400;color:var(--ink-soft);font-size:.82rem}
+.quote-actions{display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap;margin-top:26px}
+.quote-actions.end{justify-content:flex-end}
+.quote-final-actions{justify-content:flex-start}
+.text-button{border:0;background:transparent;color:var(--food);font:700 .78rem var(--font-body);text-decoration:underline;text-underline-offset:3px;cursor:pointer;padding:8px}
+.text-button.danger{color:#8b2929}
+.quote-review{border:1px solid var(--line);border-radius:10px;padding:22px;margin-top:26px;background:var(--paper)}
+.quote-review-heading{display:flex;justify-content:space-between;gap:18px;align-items:start;border-bottom:1px solid var(--line);padding-bottom:15px}
+.quote-review-heading h3{margin:0}
+.quote-review dl{margin:0}
+.quote-review-row{display:grid;grid-template-columns:38% 62%;gap:12px;padding:10px 0;border-bottom:1px solid var(--line)}
+.quote-review-row dt{color:var(--ink-soft)}
+.quote-review-row dd{margin:0;font-weight:600;overflow-wrap:anywhere}
+.quote-line-items{list-style:none;margin:18px 0 0;padding:0}
+.quote-line-items li{display:flex;justify-content:space-between;gap:18px;padding:10px 0;border-bottom:1px solid var(--line)}
+.quote-line-items strong{white-space:nowrap}
+.quote-review-notes{padding:12px 0;border-bottom:1px solid var(--line)}
+.quote-review-notes p{margin:4px 0 0;color:var(--ink-soft);overflow-wrap:anywhere}
+.quote-total{display:flex;justify-content:space-between;gap:20px;align-items:center;margin-top:18px;padding:18px;background:var(--food-dim);border-radius:7px}
+.quote-total span{font-weight:700}
+.quote-total strong{font-family:var(--font-display);font-size:1.8rem;color:var(--food)}
+.quote-excluded,.quote-terms{font-size:.82rem;color:var(--ink-soft);margin:12px 0 0}
+.quote-terms{background:var(--paper-dim);padding:13px;border-radius:7px}
+.quote-print-sheet{display:none}
+@media(max-width:900px){
+  .quote-intro-grid{grid-template-columns:1fr}.quote-intro-image{order:-1}
+  .quote-layout{grid-template-columns:1fr}.quote-live-card{position:static;order:-1;display:grid;grid-template-columns:1fr 1fr;gap:8px 20px}.quote-live-card>p.kicker,.quote-live-card>h2,.quote-live-card>hr{grid-column:1/-1}.quote-live-card dl{margin:0}.quote-live-card .quote-live-total{margin:0}.quote-live-card>p{grid-column:1/-1}
+}
+@media(max-width:620px){
+  .quote-intro{padding:42px 0}.quote-section{padding-top:36px}.quote-choice-grid{grid-template-columns:1fr}.quote-form-card{padding:20px 16px}.quote-live-card{grid-template-columns:1fr;padding:20px}.quote-live-card>*{grid-column:1!important}.quote-progress-item strong{font-size:.61rem}.quote-review{padding:16px}.quote-review-heading,.quote-total{align-items:flex-start;flex-direction:column}.quote-review-row{grid-template-columns:1fr;gap:2px}.quote-actions .btn,.quote-final-actions .btn,.quote-final-actions a{width:100%;justify-content:center}.quote-final-actions .text-button{width:100%}
+}
+
+@media print{
+  @page{margin:14mm;size:A4}
+  body.quote-page>*:not(.quote-print-sheet){display:none!important}
+  body.quote-page{background:#fff;color:#111;font:10.5pt Arial,sans-serif}
+  .quote-print-sheet{display:block!important;padding:0}
+  .quote-print-sheet header{display:flex;justify-content:space-between;gap:24px;border-bottom:2px solid #713640;padding-bottom:14px}
+  .quote-print-sheet header>div:last-child{text-align:right}
+  .print-brand{font:700 24pt Georgia,serif;color:#713640;margin:0}
+  .quote-print-sheet h1{font:600 28pt Georgia,serif;margin:28px 0 20px}
+  .quote-print-sheet dl{margin:0}
+  .quote-print-sheet dl div{display:grid;grid-template-columns:30% 70%;gap:14px;padding:9px 0;border-bottom:1px solid #ddd;break-inside:avoid}
+  .quote-print-sheet dt{font-weight:700}.quote-print-sheet dd{margin:0;overflow-wrap:anywhere}
+  .print-total{display:flex;justify-content:space-between;align-items:center;margin-top:24px;padding:16px;background:#f2e7e3;border:1px solid #713640}
+  .print-total strong{font:700 19pt Georgia,serif;color:#713640}
+  .print-terms{margin-top:20px;padding:12px;border:1px solid #bbb;font-size:9pt}
+  .quote-print-sheet footer{display:flex;justify-content:space-between;border-top:1px solid #777;margin-top:30px;padding-top:10px;font-weight:700}
+}

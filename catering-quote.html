@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Get a Catering Quote | Zwelicious Food</title>
+<meta name="description" content="Tell Zwelicious Food about your event, review your catering requirements and send a detailed quote request on WhatsApp.">
+<link rel="icon" href="brand-favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="food quote-page">
+<a class="skip-link" href="#quote-tool">Skip to the catering quote form</a>
+
+<header class="site-header">
+  <nav class="nav" aria-label="Primary">
+    <a class="brand" href="index.html"><span data-group-name>Zweli Group</span></a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu"><span></span></button>
+    <ul class="nav-links" id="primary-nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="food.html">Zwelicious Food</a></li>
+      <li><a href="travel.html">Zweli Travel</a></li>
+      <li><a href="solar.html">Zweli Solar</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a class="nav-cta" href="catering-quote.html" aria-current="page">Get a catering quote</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="quote-intro">
+    <div class="wrap quote-intro-grid">
+      <div>
+        <p class="hero-eyebrow">Zwelicious Food · Catering quotation</p>
+        <h1>Plan the food for your event.</h1>
+        <p class="lede">Complete the short guided form, review every detail, then send the request to Zwelicious Food on WhatsApp. Nothing is booked until the business confirms it with you.</p>
+      </div>
+      <div class="quote-intro-image img-panel ar-wide">
+        <img src="food-photo-atlas-hq.webp" class="atlas-image atlas-cell-3" alt="A generous South African buffet prepared for a catered event" fetchpriority="high">
+      </div>
+    </div>
+  </section>
+
+  <section class="quote-section section-alt" id="quote-tool">
+    <div class="wrap">
+      <div class="quote-progress" aria-label="Quotation progress">
+        <div data-progress-step="1" class="quote-progress-item"><span>1</span><strong>Event</strong></div>
+        <div data-progress-step="2" class="quote-progress-item"><span>2</span><strong>Catering</strong></div>
+        <div data-progress-step="3" class="quote-progress-item"><span>3</span><strong>Review</strong></div>
+      </div>
+
+      <div class="quote-layout">
+        <form id="catering-quote-form" class="quote-form-card" novalidate>
+          <p class="quote-disclosure">This is a quotation request, not a booking. Menus, final pricing and availability must be confirmed by Zwelicious Food.</p>
+
+          <section class="quote-step" data-quote-step="1" aria-labelledby="step-1-title">
+            <div class="quote-step-head">
+              <p class="kicker">Step 1 of 3</p>
+              <h2 id="step-1-title">Tell us about the event</h2>
+            </div>
+
+            <div class="field-row">
+              <div class="field">
+                <label for="quote-event-type">Event type</label>
+                <select id="quote-event-type" name="eventType" data-required data-error="Choose an event type.">
+                  <option value="">Choose an event type</option>
+                </select>
+                <p class="error-text" role="alert"></p>
+              </div>
+              <div class="field">
+                <label for="quote-event-date">Event date</label>
+                <input id="quote-event-date" name="eventDate" type="date" data-required data-error="Choose the event date.">
+                <p class="error-text" role="alert"></p>
+              </div>
+            </div>
+
+            <div class="field-row">
+              <div class="field">
+                <label for="quote-guests">Number of guests</label>
+                <input id="quote-guests" name="guests" type="number" min="1" step="1" inputmode="numeric" placeholder="e.g. 80" data-required data-error="Enter the number of guests.">
+                <p class="error-text" role="alert"></p>
+              </div>
+              <div class="field">
+                <label for="quote-fulfilment">How should the food be provided?</label>
+                <select id="quote-fulfilment" name="fulfilment" data-required data-error="Choose a preferred service method.">
+                  <option value="">Choose a preferred option</option>
+                </select>
+                <p class="hint">Every option is a request and remains subject to confirmation.</p>
+                <p class="error-text" role="alert"></p>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="quote-location">Venue or delivery location</label>
+              <input id="quote-location" name="location" type="text" autocomplete="street-address" placeholder="Venue name, suburb or full address" data-required data-error="Enter the venue or delivery location.">
+              <p class="error-text" role="alert"></p>
+            </div>
+
+            <div class="quote-actions end">
+              <button class="btn btn-primary" type="button" data-next-step="2">Continue to catering</button>
+            </div>
+          </section>
+
+          <section class="quote-step" data-quote-step="2" aria-labelledby="step-2-title" hidden>
+            <div class="quote-step-head">
+              <p class="kicker">Step 2 of 3</p>
+              <h2 id="step-2-title">Choose the closest catering style</h2>
+              <p>Approved fixed menus and prices have not been published yet. Choose the closest style and describe what you want; Zwelicious Food will confirm the menu and price.</p>
+            </div>
+
+            <fieldset class="quote-choice-group">
+              <legend>Catering style</legend>
+              <div id="service-style-grid" class="quote-choice-grid"></div>
+              <p id="service-style-error" class="error-text" role="alert"></p>
+            </fieldset>
+
+            <div id="quote-extras-wrap" class="quote-choice-group">
+              <h3>Optional extras</h3>
+              <div id="extras-grid" class="quote-choice-grid"></div>
+            </div>
+
+            <div class="field">
+              <label for="quote-menu-notes">Food and menu preferences</label>
+              <textarea id="quote-menu-notes" name="menuNotes" placeholder="Tell us what food you would like, how many courses you need, and anything you want included or excluded." data-required data-error="Describe the food or menu you need."></textarea>
+              <p class="error-text" role="alert"></p>
+            </div>
+
+            <fieldset>
+              <legend>Dietary requirements</legend>
+              <div class="check-grid">
+                <label class="check-item"><input type="checkbox" name="dietary" value="Vegetarian"> Vegetarian</label>
+                <label class="check-item"><input type="checkbox" name="dietary" value="Vegan"> Vegan</label>
+                <label class="check-item"><input type="checkbox" name="dietary" value="Halal"> Halal</label>
+                <label class="check-item"><input type="checkbox" name="dietary" value="Gluten-free"> Gluten-free</label>
+                <label class="check-item"><input type="checkbox" name="dietary" value="Dairy-free"> Dairy-free</label>
+                <label class="check-item"><input type="checkbox" name="dietary" value="Nut allergy"> Nut allergy</label>
+              </div>
+            </fieldset>
+
+            <div class="field">
+              <label for="quote-dietary-notes">Allergy or dietary details</label>
+              <textarea id="quote-dietary-notes" name="dietaryNotes" placeholder="Give details about allergies, cross-contamination concerns or other requirements."></textarea>
+            </div>
+
+            <div class="field">
+              <label for="quote-additional">Additional requests</label>
+              <textarea id="quote-additional" name="additionalRequests" placeholder="Serving times, equipment, staff, setup or anything else you would like discussed."></textarea>
+            </div>
+
+            <div class="quote-actions">
+              <button class="btn btn-secondary" type="button" data-prev-step="1">Back</button>
+              <button class="btn btn-primary" type="button" data-next-step="3">Continue to customer details</button>
+            </div>
+          </section>
+
+          <section class="quote-step" data-quote-step="3" aria-labelledby="step-3-title" hidden>
+            <div class="quote-step-head">
+              <p class="kicker">Step 3 of 3</p>
+              <h2 id="step-3-title">Your details and review</h2>
+            </div>
+
+            <div class="field-row">
+              <div class="field">
+                <label for="quote-full-name">Full name</label>
+                <input id="quote-full-name" name="fullName" type="text" autocomplete="name" data-required data-error="Enter your full name.">
+                <p class="error-text" role="alert"></p>
+              </div>
+              <div class="field">
+                <label for="quote-phone">Phone number</label>
+                <input id="quote-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="e.g. 061 460 8400" data-required data-error="Enter your phone number.">
+                <p class="error-text" role="alert"></p>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="quote-email">Email address <span class="optional">Optional</span></label>
+              <input id="quote-email" name="email" type="email" autocomplete="email" inputmode="email" placeholder="name@example.com">
+              <p class="error-text" role="alert"></p>
+            </div>
+
+            <section class="quote-review" aria-labelledby="review-heading">
+              <div class="quote-review-heading">
+                <div><p class="kicker">Estimated catering quote</p><h3 id="review-heading">Review your request</h3></div>
+                <button class="text-button" type="button" data-prev-step="2">Edit catering details</button>
+              </div>
+              <dl id="quote-review-details"></dl>
+              <ul id="quote-review-items" class="quote-line-items"></ul>
+              <div class="quote-review-notes"><strong>Menu preferences</strong><p id="review-menu-notes"></p></div>
+              <div class="quote-review-notes"><strong>Dietary requirements</strong><p id="review-dietary"></p></div>
+              <div class="quote-review-notes"><strong>Additional requests</strong><p id="review-requests"></p></div>
+              <div class="quote-total"><span>Estimated catering quote</span><strong id="review-total">To be confirmed</strong></div>
+              <p id="review-excluded" class="quote-excluded">Unconfirmed menu, service and delivery charges are excluded from any displayed estimate. They are not free; Zwelicious Food will confirm them.</p>
+            </section>
+
+            <p class="quote-terms">Opening WhatsApp does not send the request. Check the message and press Send yourself. This request does not reserve the date or confirm a booking.</p>
+            <div class="quote-actions quote-final-actions">
+              <button class="btn btn-secondary" type="button" data-prev-step="2">Back and edit</button>
+              <a id="send-whatsapp" class="btn btn-whatsapp" href="#" target="_blank" rel="noopener">Send quote request on WhatsApp</a>
+              <button id="print-quote" class="btn btn-secondary" type="button">Print / Save as PDF</button>
+              <button id="start-again" class="text-button danger" type="button">Start again</button>
+            </div>
+          </section>
+
+          <p id="quote-status" class="form-status" role="status" aria-live="polite"></p>
+        </form>
+
+        <aside class="quote-live-card" aria-live="polite">
+          <p class="kicker">Live summary</p>
+          <h2>Your request</h2>
+          <dl>
+            <div><dt>Guests</dt><dd id="live-guests">—</dd></div>
+            <div><dt>Selection</dt><dd id="live-selection">Not selected</dd></div>
+          </dl>
+          <div class="quote-live-total"><span>Estimated catering quote</span><strong id="live-total">To be confirmed</strong></div>
+          <p id="live-charge-note">Unconfirmed menu and service charges are excluded from any displayed amount.</p>
+          <hr>
+          <p><strong>No payment is taken here.</strong> The request goes to WhatsApp for the business to review.</p>
+        </aside>
+      </div>
+    </div>
+  </section>
+</main>
+
+<section id="quote-print-sheet" class="quote-print-sheet" aria-hidden="true">
+  <header><div><p class="print-brand">Zwelicious Food</p><p>Part of Zweli Group</p></div><div><strong>Estimated catering quote</strong><p data-print-date></p></div></header>
+  <h1>Catering quotation request</h1>
+  <dl>
+    <div><dt>Customer</dt><dd data-print-customer></dd></div>
+    <div><dt>Event</dt><dd data-print-event></dd></div>
+    <div><dt>Requested catering</dt><dd data-print-service></dd></div>
+    <div><dt>Menu preferences</dt><dd data-print-menu></dd></div>
+    <div><dt>Dietary requirements</dt><dd data-print-dietary></dd></div>
+    <div><dt>Additional requests</dt><dd data-print-requests></dd></div>
+  </dl>
+  <div class="print-total"><span>Estimated catering quote</span><strong data-print-total>To be confirmed</strong></div>
+  <p class="print-terms">This document records a quotation request only. Final menus, pricing, charges and availability must be confirmed by Zwelicious Food. It is not an invoice, booking confirmation or proof of payment.</p>
+  <footer><span data-whatsapp-display>+27 61 460 8400</span><span data-email-display>zweligroup@gmail.com</span></footer>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div><p class="footer-brand" data-group-name>Zweli Group</p><p>The shared home of Zwelicious Food, Zweli Travel Agency and Zweli Solar Power.</p></div>
+      <div><h5>Businesses</h5><ul><li><a href="food.html">Zwelicious Food</a></li><li><a href="travel.html">Zweli Travel Agency</a></li><li><a href="solar.html">Zweli Solar Power</a></li></ul></div>
+      <div><h5>Site</h5><ul><li><a href="index.html">Home</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div><h5>Talk to us</h5><ul><li><a data-whatsapp-href href="https://wa.me/27614608400">WhatsApp: <span data-whatsapp-display>+27 61 460 8400</span></a></li><li><a data-email-href href="mailto:zweligroup@gmail.com">Email: <span data-email-display>zweligroup@gmail.com</span></a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><span>&copy; <span data-current-year>2026</span> <span data-group-name>Zweli Group</span>.</span><span>Quotation requests are not confirmed bookings.</span></div>
+  </div>
+</footer>
+
+<script src="config.js"></script>
+<script src="main.js"></script>
+<script src="catering-config.js"></script>
+<script src="catering-calculator.js"></script>
+<script src="catering-quote.js"></script>
+</body>
+</html>
