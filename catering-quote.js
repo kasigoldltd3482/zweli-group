@@ -278,6 +278,19 @@
     event.currentTarget.href = "https://wa.me/" + cfg.whatsappNumber + "?text=" + encodeURIComponent(messageText());
   });
 
+  document.getElementById("send-email").addEventListener("click", function (event) {
+    if (!validateStep(3)) { event.preventDefault(); return; }
+    buildReview();
+    var email = (window.ZWELI_CONFIG || {}).contactEmail;
+    if (!email) {
+      event.preventDefault();
+      document.getElementById("quote-status").textContent = "The business email address is not configured.";
+      return;
+    }
+    event.currentTarget.href = "mailto:" + email + "?subject=" + encodeURIComponent("Catering quote request — " + value("eventType")) + "&body=" + encodeURIComponent(messageText());
+    document.getElementById("quote-status").textContent = "Your email app will open with the request. Review it and press Send. If no app opens, set up an email app on your device or use WhatsApp.";
+  });
+
   document.getElementById("print-quote").addEventListener("click", function () {
     if (!validateStep(3)) return;
     buildReview();
